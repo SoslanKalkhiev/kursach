@@ -13,5 +13,20 @@
     "IsFavorite": true,
     "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/600x600bb.jpg",
     "DateAdded": "2026-06-16T18:37:50.7659454Z"
+  },
+  {
+    "Id": "348658aa-0ce7-4fb3-af39-b3b6c3ed810a",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Of Course",
+    "Artist": "Thee Oh Sees",
+    "ReleaseDate": "2026-06-05T00:00:00",
+    "Genres": [
+      "Rock"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "/uploads/329691643975425aaaaf3a72a6c13fb5.jpg",
+    "DateAdded": "2026-06-16T19:02:42.3355978Z"
   }
 ]
