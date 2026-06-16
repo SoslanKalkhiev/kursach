@@ -1,0 +1,49 @@
+@{
+    var userName = User.Identity?.IsAuthenticated == true ? User.Identity!.Name : null;
+}
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] — Soundbox</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="app-navbar">
+        <div class="nav-inner">
+            <a class="brand" asp-controller="Home" asp-action="Index">
+                <span class="brand-mark">◆</span> Soundbox
+            </a>
+            <nav class="nav-actions">
+                @if (userName != null)
+                {
+                    <span class="nav-user d-none d-sm-inline-flex">
+                        <span class="nav-user-dot"></span>@userName
+                    </span>
+                    <a asp-controller="Albums" asp-action="Index" class="nav-btn nav-btn-ghost">Моя фонотека</a>
+                    <form asp-controller="Account" asp-action="Logout" method="post" class="m-0">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="nav-btn nav-btn-ghost">Выйти</button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="Login" class="nav-btn nav-btn-ghost">Войти</a>
+                    <a asp-controller="Account" asp-action="Register" class="nav-btn nav-btn-accent">Регистрация</a>
+                }
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-main">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

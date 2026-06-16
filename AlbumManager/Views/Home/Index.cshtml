@@ -1,0 +1,76 @@
+@model List<Album>
+@{
+    ViewData["Title"] = "Главная";
+    var isAuth = User.Identity?.IsAuthenticated == true;
+}
+
+<section class="hero">
+    <div class="hero-inner">
+        <span class="hero-badge">◆ Soundbox — личная фонотека</span>
+        <h1 class="hero-title">
+            Твоя<br />
+            <span class="lime">коллекция</span><br />
+            <span class="outline">пластинок</span>
+        </h1>
+        <p class="hero-sub">
+            Собирай прослушанное и запланированное, ставь оценки, отмечай любимое.
+            Добавляй альбомы вручную или находи в каталоге iTunes — обложка и данные подтянутся сами.
+        </p>
+        <div class="hero-actions">
+            @if (isAuth)
+            {
+                <a asp-controller="Albums" asp-action="Index" class="btn btn-accent btn-lg">Открыть фонотеку →</a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Register" class="btn btn-accent btn-lg">Завести коллекцию</a>
+                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-light btn-lg">Войти</a>
+            }
+        </div>
+        <div class="hero-features">
+            <span>Оценки с половинами</span>
+            <span>Избранное</span>
+            <span>Поиск и фильтры</span>
+            <span>Автозагрузка обложек</span>
+        </div>
+    </div>
+</section>
+
+@if (Model.Count > 0)
+{
+    <section class="showcase">
+        <div class="showcase-head">
+            <h2 class="section-title">Витрина альбомов</h2>
+            <span class="text-secondary small">примеры из демо-библиотеки</span>
+        </div>
+
+        <div class="album-grid showcase-grid">
+            @foreach (var a in Model)
+            {
+                <article class="album-card showcase-card">
+                    <div class="cover-wrap">
+                        <img class="cover" src="@a.CoverUrl" alt="@a.Title" loading="lazy"
+                             onerror="this.classList.add('cover-missing');this.removeAttribute('src');" />
+                        @if (a.IsFavorite)
+                        {
+                            <span class="fav-badge" title="В избранном">♥</span>
+                        }
+                    </div>
+                    <div class="card-body">
+                        <div class="title text-truncate" title="@a.Title">@a.Title</div>
+                        <div class="artist text-truncate" title="@a.Artist">@a.Artist</div>
+                        <div class="rating-row">@Html.Raw(StarRenderer.Render(a.Rating))</div>
+                    </div>
+                </article>
+            }
+        </div>
+
+        @if (!isAuth)
+        {
+            <div class="showcase-cta">
+                <p>Хотите собрать свою коллекцию?</p>
+                <a asp-controller="Account" asp-action="Register" class="btn btn-accent">Создать аккаунт</a>
+            </div>
+        }
+    </section>
+}

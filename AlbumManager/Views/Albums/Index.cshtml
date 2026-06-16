@@ -1,0 +1,156 @@
+@model AlbumIndexViewModel
+@{
+    ViewData["Title"] = "Моя фонотека";
+    var q = Model.Query;
+    var ci = System.Globalization.CultureInfo.InvariantCulture;
+
+    string SegClass(LibraryTab t) => t == q.Tab ? "seg-btn active" : "seg-btn";
+
+    string Plural(int n)
+    {
+        var m10 = n % 10; var m100 = n % 100;
+        if (m10 == 1 && m100 != 11) return "альбом";
+        if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return "альбома";
+        return "альбомов";
+    }
+
+    var sortLabel = q.Sort switch
+    {
+        AlbumSort.Title => "по алфавиту",
+        AlbumSort.Artist => "по исполнителю",
+        AlbumSort.Rating => "по оценке",
+        AlbumSort.Genre => "по жанру",
+        _ => "по дате добавления"
+    };
+}
+
+<header class="lib-header">
+    <div class="lib-title-row">
+        <h1 class="page-title">Моя фонотека</h1>
+        @if (Model.CountAll > 0)
+        {
+            <div class="view-toggle" id="viewToggle">
+                <button type="button" class="vt-btn" data-view="grid" title="Сетка">▦</button>
+                <button type="button" class="vt-btn" data-view="list" title="Список">☰</button>
+            </div>
+        }
+    </div>
+
+    <div class="stats">
+        <div class="stat"><span class="stat-num">@Model.CountAll</span><span class="stat-cap">всего</span></div>
+        <div class="stat"><span class="stat-num">@Model.CountListened</span><span class="stat-cap">прослушано</span></div>
+        <div class="stat"><span class="stat-num">@Model.CountPlanned</span><span class="stat-cap">в планах</span></div>
+        <div class="stat"><span class="stat-num">@Model.CountFavorites</span><span class="stat-cap">избранное</span></div>
+        <div class="stat">
+            <span class="stat-num">@(Model.AverageRating?.ToString("0.#", ci) ?? "—")</span>
+            <span class="stat-cap">★ средняя</span>
+        </div>
+        <div class="stat stat-wide">
+            <span class="stat-num-sm">@(Model.TopGenres.Count > 0 ? string.Join(", ", Model.TopGenres) : "—")</span>
+            <span class="stat-cap">топ-жанры</span>
+        </div>
+    </div>
+</header>
+
+@if (Model.CountAll > 0)
+{
+    <form method="get" asp-action="Index" id="filterForm" class="lib-controls">
+        <input type="hidden" name="tab" value="@q.Tab" id="tabInput" />
+
+        <nav class="seg">
+            <button type="button" class="@SegClass(LibraryTab.All)" onclick="selectTab('All')">Все <span class="seg-cnt">@Model.CountAll</span></button>
+            <button type="button" class="@SegClass(LibraryTab.Listened)" onclick="selectTab('Listened')">Прослушанные <span class="seg-cnt">@Model.CountListened</span></button>
+            <button type="button" class="@SegClass(LibraryTab.Planned)" onclick="selectTab('Planned')">В планах <span class="seg-cnt">@Model.CountPlanned</span></button>
+            <button type="button" class="@SegClass(LibraryTab.Favorites)" onclick="selectTab('Favorites')">Избранное <span class="seg-cnt">@Model.CountFavorites</span></button>
+        </nav>
+
+        <div class="filters">
+            <div class="search-box">
+                <span class="search-ico">⌕</span>
+                <input type="search" name="search" value="@q.Search" class="form-control"
+                       placeholder="Поиск по названию или исполнителю…" />
+            </div>
+            <select name="sort" class="form-select" onchange="this.form.submit()" aria-label="Сортировка">
+                <option value="@AlbumSort.DateAdded" selected="@(q.Sort == AlbumSort.DateAdded)">По дате добавления</option>
+                <option value="@AlbumSort.Title" selected="@(q.Sort == AlbumSort.Title)">По алфавиту</option>
+                <option value="@AlbumSort.Artist" selected="@(q.Sort == AlbumSort.Artist)">По исполнителю</option>
+                <option value="@AlbumSort.Rating" selected="@(q.Sort == AlbumSort.Rating)">По оценке</option>
+                <option value="@AlbumSort.Genre" selected="@(q.Sort == AlbumSort.Genre)">По жанру</option>
+            </select>
+            <select name="genre" class="form-select" onchange="this.form.submit()" aria-label="Жанр">
+                <option value="">Все жанры</option>
+                @foreach (var g in Model.AllGenres)
+                {
+                    <option value="@g" selected="@(string.Equals(g, q.Genre, StringComparison.OrdinalIgnoreCase))">@g</option>
+                }
+            </select>
+        </div>
+    </form>
+
+    <div class="lib-meta">
+        <span class="lib-count">@Model.Albums.Count @Plural(Model.Albums.Count)</span>
+        <span class="lib-sort">сортировка: @sortLabel</span>
+    </div>
+}
+
+@if (Model.Albums.Count == 0)
+{
+    <div class="empty-state">
+        <div class="empty-ico">♪</div>
+        @if (Model.CountAll == 0)
+        {
+            <p>В вашей фонотеке пока пусто.</p>
+            <p class="text-secondary small">Добавьте первый альбом кнопкой «+» — можно найти его
+                в каталоге iTunes, обложка и данные подтянутся сами.</p>
+            <button type="button" class="btn btn-accent mt-2" onclick="openAlbum(null)">+ Добавить альбом</button>
+        }
+        else
+        {
+            <p>Ничего не найдено по текущему фильтру.</p>
+            <p class="text-secondary small">Измените поиск, вкладку или жанр.</p>
+        }
+    </div>
+}
+else
+{
+    <div class="album-grid" id="library">
+        @foreach (var a in Model.Albums)
+        {
+            <article class="album-card" role="button" tabindex="0" data-id="@a.Id"
+                     onclick="openDetail('@a.Id')" onkeydown="if(event.key==='Enter')openDetail('@a.Id')">
+                <div class="cover-wrap">
+                    <img class="cover" src="@a.CoverUrl" alt="@a.Title"
+                         loading="lazy"
+                         onerror="this.classList.add('cover-missing');this.removeAttribute('src');" />
+                    @if (a.IsFavorite)
+                    {
+                        <span class="fav-badge" title="В избранном">♥</span>
+                    }
+                    <span class="status-badge @(a.Status == AlbumStatus.Listened ? "listened" : "planned")">
+                        @(a.Status == AlbumStatus.Listened ? "прослушано" : "в планах")
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="title text-truncate" title="@a.Title">@a.Title</div>
+                    <div class="artist text-truncate" title="@a.Artist">@a.Artist</div>
+                    <div class="genres text-truncate">@string.Join(" · ", a.Genres)</div>
+                    <div class="rating-row">@Html.Raw(StarRenderer.Render(a.Rating))</div>
+                </div>
+            </article>
+        }
+    </div>
+}
+
+<button type="button" class="fab" title="Добавить альбом" onclick="openAlbum(null)">+</button>
+
+<!-- Скрытая форма-источник antiforgery-токена для AJAX POST (site.js читает её при запросе) -->
+<form id="__af" class="d-none">@Html.AntiForgeryToken()</form>
+
+<!-- Модалка просмотра/редактирования/добавления -->
+<div class="modal fade" id="albumModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" id="albumModalBody">
+            <!-- содержимое загружается через AJAX -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Регистрация";
+    var returnUrl = ViewData["ReturnUrl"] as string;
+}
+
+<div class="auth-wrap">
+    <div class="auth-card">
+        <div class="auth-eyebrow">◆ Soundbox</div>
+        <h1 class="auth-title">Заведи коллекцию</h1>
+        <p class="text-secondary small mb-4">Нужны только имя и пароль.</p>
+
+        <div asp-validation-summary="All" class="text-danger small mb-3"></div>
+
+        <form method="post" asp-controller="Account" asp-action="Register">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="returnUrl" value="@returnUrl" />
+
+            <div class="mb-3">
+                <label class="form-label">Имя пользователя</label>
+                <input name="username" class="form-control" autocomplete="username" autofocus required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Пароль</label>
+                <input name="password" type="password" class="form-control" autocomplete="new-password" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Повторите пароль</label>
+                <input name="confirmPassword" type="password" class="form-control" autocomplete="new-password" required />
+            </div>
+
+            <button type="submit" class="btn btn-accent w-100">Создать аккаунт</button>
+        </form>
+
+        <p class="text-secondary small mt-4 mb-0 text-center">
+            Уже есть аккаунт? <a asp-controller="Account" asp-action="Login" asp-route-returnUrl="@returnUrl">Войти</a>
+        </p>
+    </div>
+</div>
