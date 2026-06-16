@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "11091d7a-0f66-4608-bc80-541242fdcd09",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+    "Artist": "David Bowie",
+    "ReleaseDate": "1972-06-16T00:00:00",
+    "Genres": [
+      "Rock"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-16T18:37:50.7659454Z"
+  }
+]

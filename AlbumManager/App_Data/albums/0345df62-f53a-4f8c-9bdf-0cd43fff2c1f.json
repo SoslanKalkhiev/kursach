@@ -1,0 +1,372 @@
+[
+  {
+    "Id": "2f5136b8-765b-4b6d-a761-7699c3b5a89a",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Wish You Were Here",
+    "Artist": "Pink Floyd",
+    "ReleaseDate": "1975-09-12T00:00:00",
+    "Genres": [
+      "Progressive Rock",
+      "Psychedelic"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/aa/e0/ab/aae0ab6a-d906-a189-81bf-70b56aa43f7a/886445635843.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-24T13:36:18.572638Z"
+  },
+  {
+    "Id": "ff53b9db-426d-4893-a33b-c1f494f33f78",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "The Wall",
+    "Artist": "Pink Floyd",
+    "ReleaseDate": "1979-11-30T00:00:00",
+    "Genres": [
+      "Progressive Rock",
+      "Rock Opera"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-25T13:36:18.572638Z"
+  },
+  {
+    "Id": "01a06bae-1e12-4fd6-873f-dc61bfee5c82",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Abbey Road",
+    "Artist": "The Beatles",
+    "ReleaseDate": "1969-09-26T00:00:00",
+    "Genres": [
+      "Rock",
+      "Pop"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-26T13:36:18.572638Z"
+  },
+  {
+    "Id": "2f118263-4f94-4bf0-88e3-cda3cb03c702",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Thriller",
+    "Artist": "Michael Jackson",
+    "ReleaseDate": "1982-11-30T00:00:00",
+    "Genres": [
+      "Pop",
+      "Funk",
+      "Disco"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-27T13:36:18.572638Z"
+  },
+  {
+    "Id": "4fcc1426-93a8-493a-9e1f-8455420984a4",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "OK Computer",
+    "Artist": "Radiohead",
+    "ReleaseDate": "1997-05-21T00:00:00",
+    "Genres": [
+      "Alternative Rock",
+      "Art Rock"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
+    "DateAdded": "2026-05-28T13:36:18.572638Z"
+  },
+  {
+    "Id": "e43f5492-1447-4d22-8dd6-e899828d8d23",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "In Rainbows",
+    "Artist": "Radiohead",
+    "ReleaseDate": "2007-10-10T00:00:00",
+    "Genres": [
+      "Alternative Rock",
+      "Electronic"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+    "DateAdded": "2026-05-29T13:36:18.572638Z"
+  },
+  {
+    "Id": "a089239e-2b25-40ce-b97f-05f013d648e0",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Random Access Memories",
+    "Artist": "Daft Punk",
+    "ReleaseDate": "2013-05-17T00:00:00",
+    "Genres": [
+      "Electronic",
+      "Disco",
+      "Funk"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-30T13:36:18.572638Z"
+  },
+  {
+    "Id": "1098e631-4151-4b14-a1c2-a0ab45d77f9b",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Discovery",
+    "Artist": "Daft Punk",
+    "ReleaseDate": "2001-03-12T00:00:00",
+    "Genres": [
+      "Electronic",
+      "House"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/600x600bb.jpg",
+    "DateAdded": "2026-05-31T13:36:18.572638Z"
+  },
+  {
+    "Id": "2175ab7b-2edf-4014-ac57-69808b16e969",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "To Pimp a Butterfly",
+    "Artist": "Kendrick Lamar",
+    "ReleaseDate": "2015-03-15T00:00:00",
+    "Genres": [
+      "Hip-Hop",
+      "Jazz Rap"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b5/a6/91/b5a69171-5232-3d5b-9c15-8963802f83dd/15UMGIM15814.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-01T13:36:18.572638Z"
+  },
+  {
+    "Id": "48a453b1-b29b-45c5-a91e-2b15583fe4fe",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "good kid, m.A.A.d city",
+    "Artist": "Kendrick Lamar",
+    "ReleaseDate": "2012-10-22T00:00:00",
+    "Genres": [
+      "Hip-Hop",
+      "West Coast"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9a/50/a1/9a50a1d8-01c2-2504-8d99-3f2fc7e5c2ff/12UMGIM52988.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-02T13:36:18.572638Z"
+  },
+  {
+    "Id": "416b2ee6-746c-4149-9efc-2ffb51634462",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Rumours",
+    "Artist": "Fleetwood Mac",
+    "ReleaseDate": "1977-02-04T00:00:00",
+    "Genres": [
+      "Soft Rock",
+      "Pop Rock"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-03T13:36:18.572638Z"
+  },
+  {
+    "Id": "334a183c-089b-4105-bda9-98e66583161e",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Back to Black",
+    "Artist": "Amy Winehouse",
+    "ReleaseDate": "2006-10-27T00:00:00",
+    "Genres": [
+      "Soul",
+      "R\u0026B",
+      "Jazz"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/cf/3f/09/cf3f0994-980d-d8ed-088d-ae89af256b73/15UMGIM24224.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-04T13:36:18.572638Z"
+  },
+  {
+    "Id": "561cc417-e33e-4b7d-91b1-31d7635bc351",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "After Hours",
+    "Artist": "The Weeknd",
+    "ReleaseDate": "2020-03-20T00:00:00",
+    "Genres": [
+      "R\u0026B",
+      "Synth-Pop"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2b/b9/fe/2bb9fef5-d7f3-8345-25a9-db0e79fde4e4/20UMGIM11048.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-05T13:36:18.572638Z"
+  },
+  {
+    "Id": "e7275975-53d5-4dc5-8ca7-cf5fa4c407d8",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "AM",
+    "Artist": "Arctic Monkeys",
+    "ReleaseDate": "2013-09-09T00:00:00",
+    "Genres": [
+      "Indie Rock",
+      "Alternative Rock"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg",
+    "DateAdded": "2026-06-06T13:36:18.572638Z"
+  },
+  {
+    "Id": "e8be64f2-d824-4203-a8f4-3da26636fac7",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Demon Days",
+    "Artist": "Gorillaz",
+    "ReleaseDate": "2005-05-11T00:00:00",
+    "Genres": [
+      "Alternative",
+      "Trip-Hop",
+      "Art Pop"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1c/0f/81/1c0f818a-e458-dd84-6f1b-ccbdf5fe14d6/825646291045.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-07T13:36:18.572638Z"
+  },
+  {
+    "Id": "b6e83277-8de5-4db9-8754-c1df24ad6537",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "My Beautiful Dark Twisted Fantasy",
+    "Artist": "Kanye West",
+    "ReleaseDate": "2010-11-22T00:00:00",
+    "Genres": [
+      "Hip-Hop"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/74/da/d174dacf-5782-dfe2-19f7-ce037dcd0237/00602527584935.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-08T13:36:18.572638Z"
+  },
+  {
+    "Id": "3e771ce3-43f6-402b-adfc-2930f264e976",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "The Rise and Fall of Ziggy Stardust",
+    "Artist": "David Bowie",
+    "ReleaseDate": "1972-06-16T00:00:00",
+    "Genres": [
+      "Glam Rock",
+      "Rock"
+    ],
+    "Rating": 4.5,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-09T13:36:18.572638Z"
+  },
+  {
+    "Id": "aa54d7fd-6bdc-4de8-a69d-4c2d2a2d8cee",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Mezzanine",
+    "Artist": "Massive Attack",
+    "ReleaseDate": "1998-04-20T00:00:00",
+    "Genres": [
+      "Trip-Hop",
+      "Electronic"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/98/55/0a98555b-8d9d-3b46-660a-b91261557d17/00724384559953.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-10T13:36:18.572638Z"
+  },
+  {
+    "Id": "5f606290-390f-4ee2-8312-4ba1bda647ae",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "The Slow Rush",
+    "Artist": "Tame Impala",
+    "ReleaseDate": "2020-02-14T00:00:00",
+    "Genres": [
+      "Psychedelic",
+      "Synth-Pop"
+    ],
+    "Rating": null,
+    "Status": 0,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/65/e3/e7/65e3e740-b69f-f5cb-f2e6-7dedb5265ac9/19UMGIM96748.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-11T13:36:18.572638Z"
+  },
+  {
+    "Id": "d5cade2c-5951-4d40-b52b-7e38c0adb2ae",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Lonerism",
+    "Artist": "Tame Impala",
+    "ReleaseDate": "2012-10-05T00:00:00",
+    "Genres": [
+      "Psychedelic Rock"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b7/40/9b/b7409bc6-24fa-b956-5613-4be8dc62be06/12UMGIM64219.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-12T13:36:18.572638Z"
+  },
+  {
+    "Id": "73450683-f452-431e-ba31-01942ac25419",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "SOS",
+    "Artist": "SZA",
+    "ReleaseDate": "2022-12-09T00:00:00",
+    "Genres": [
+      "R\u0026B",
+      "Pop"
+    ],
+    "Rating": null,
+    "Status": 0,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/62/93/13/6293132e-20ff-67ab-3d1f-96bb6797a6ba/196589564955.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-13T13:36:18.572638Z"
+  },
+  {
+    "Id": "02518cde-18a0-418d-a6c0-e4f9a6ac4f0f",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Born to Die",
+    "Artist": "Lana Del Rey",
+    "ReleaseDate": "2012-01-27T00:00:00",
+    "Genres": [
+      "Baroque Pop",
+      "Alternative"
+    ],
+    "Rating": null,
+    "Status": 0,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/10/66/591066ea-3c85-3dfe-ef82-ffdbbcdfc8b9/12UMGIM00033.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-14T13:36:18.572638Z"
+  },
+  {
+    "Id": "36cc7d57-c8c1-4dca-8934-5a9cf94ffa3d",
+    "OwnerUserId": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Title": "Melodrama",
+    "Artist": "Lorde",
+    "ReleaseDate": "2017-06-16T00:00:00",
+    "Genres": [
+      "Art Pop",
+      "Electropop"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/58/11/b1/5811b172-e180-25a6-69e6-4385fbbfb5dc/17UM1IM02207.rgb.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-15T13:36:18.572638Z"
+  }
+]

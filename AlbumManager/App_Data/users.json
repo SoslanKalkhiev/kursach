@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "0345df62-f53a-4f8c-9bdf-0cd43fff2c1f",
+    "Username": "demo",
+    "PasswordHash": "11jB\u002Bl\u002B3SA1WJQ/i/txikwKpRWJ6oldOLlKLn1T1zrA=",
+    "PasswordSalt": "kYskvCqmM9ORW17qfBAsxg=="
+  },
+  {
+    "Id": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Username": "stud",
+    "PasswordHash": "sRSA4e0Xq1c9fgAWHqr4z\u002BcaCOJjXKqTRpQ2fmV0j8o=",
+    "PasswordSalt": "dQP64bL2XleZBwD/O4DY9w=="
+  }
+]
