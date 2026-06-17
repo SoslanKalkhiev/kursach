@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Security.Claims;
 using AlbumManager.Models;
 using AlbumManager.Services;
@@ -94,7 +95,7 @@ public class AlbumsController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Save(
         string? id, string title, string artist, DateTime? releaseDate,
-        string? genres, double? rating, AlbumStatus status, bool isFavorite, string? coverUrl)
+        string? genres, string? rating, AlbumStatus status, bool isFavorite, string? coverUrl)
     {
         if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(artist))
             return BadRequest("Название и исполнитель обязательны.");
@@ -104,9 +105,12 @@ public class AlbumsController : Controller
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .ToList();
 
-        double? normRating = rating.HasValue
-            ? Math.Clamp(Math.Round(rating.Value * 2) / 2, 0, 5)
-            : null;
+        double? normRating = null;
+        if (!string.IsNullOrEmpty(rating) &&
+            double.TryParse(rating, NumberStyles.Number, CultureInfo.InvariantCulture, out var parsed))
+        {
+            normRating = Math.Clamp(Math.Round(parsed * 2) / 2, 0, 5);
+        }
 
         if (string.IsNullOrEmpty(id))
         {
