@@ -32,7 +32,7 @@ dotnet run --project AlbumManager --launch-profile http
 
 ## Где хранятся данные
 
-Каталог `AlbumManager/App_Data/` (создаётся автоматически, в гите игнорируется):
+Каталог `AlbumManager/App_Data/` (создаётся автоматически):
 
 - `users.json` — пользователи (имя + хеш пароля);
 - `albums/{userId}.json` — альбомы конкретного пользователя.

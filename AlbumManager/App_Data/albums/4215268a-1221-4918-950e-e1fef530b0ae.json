@@ -28,5 +28,155 @@
     "IsFavorite": true,
     "CoverUrl": "/uploads/329691643975425aaaaf3a72a6c13fb5.jpg",
     "DateAdded": "2026-06-16T19:02:42.3355978Z"
+  },
+  {
+    "Id": "22eff926-0c6c-4e02-b499-37437ac30a54",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "CHROMAKOPIA",
+    "Artist": "Tyler, The Creator",
+    "ReleaseDate": "2024-10-28T00:00:00",
+    "Genres": [
+      "Hip-Hop/Rap"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/ef/ee/b6efeefa-fc99-37d1-ad21-0d769b2a4958/196872796971.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:44:37.4130406Z"
+  },
+  {
+    "Id": "e33251dc-a702-4bca-8171-4948bdc97580",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Soundtracks For the Blind",
+    "Artist": "Swans",
+    "ReleaseDate": "1996-01-01T00:00:00",
+    "Genres": [
+      "Alternative"
+    ],
+    "Rating": null,
+    "Status": 0,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/67/bb/8467bbdd-e2f7-f17e-3f1d-6489aef4d7d0/658457000120_cover.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:44:51.8071657Z"
+  },
+  {
+    "Id": "39e0faa6-ee90-4d3b-b558-891cef9e0727",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "The Pilgrim, Their God and the King of My Decrepit Mountain",
+    "Artist": "Tapir!",
+    "ReleaseDate": "2024-01-26T00:00:00",
+    "Genres": [
+      "Folk"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/cf/22/18/cf2218b8-24d8-435f-1f55-dab53a118404/5400863137502_cover.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:48:36.0757948Z"
+  },
+  {
+    "Id": "82692579-971a-4548-84e6-349beb28ac61",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Tomorrow Does Not Exist",
+    "Artist": "I Broke My Robot",
+    "ReleaseDate": "2007-09-04T00:00:00",
+    "Genres": [
+      "Electronic"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/dc/45/f3/mzi.mqsfluzf.tif/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:51:01.1269785Z"
+  },
+  {
+    "Id": "4b3ee00d-fba2-4f23-a96c-22ea63dd6cfd",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Milk Time",
+    "Artist": "Hiro Yanagida",
+    "ReleaseDate": "1970-12-12T00:00:00",
+    "Genres": [
+      "Prog-Rock/Art Rock"
+    ],
+    "Rating": null,
+    "Status": 0,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5b/39/5b/5b395beb-cd8d-2e8d-a4f8-f3da7ebc54b3/4251513965980_3000.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:52:30.0330097Z"
+  },
+  {
+    "Id": "5edae762-4d47-4522-ac78-8cabc6647fba",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "\u041A\u0440\u044B\u0448\u043A\u0438\u043D \u0434\u043E\u043C",
+    "Artist": "\u0412\u0435\u043D\u044F \u0414\u0027\u0440\u043A\u0438\u043D",
+    "ReleaseDate": "1996-10-15T00:00:00",
+    "Genres": [
+      "Singer/Songwriter"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/99/1c/0f991cf2-29e8-dcf7-86c6-1fa5db3b1a18/cover.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:53:00.4848702Z"
+  },
+  {
+    "Id": "79101229-bc8b-43b1-874b-a9869061ac0d",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Wlfgrl",
+    "Artist": "Machine Girl",
+    "ReleaseDate": "2014-02-17T00:00:00",
+    "Genres": [
+      "Breakbeat"
+    ],
+    "Rating": 4,
+    "Status": 1,
+    "IsFavorite": false,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/79/c0/da/79c0da09-8ae9-a1ed-0a5b-b6486f77c11e/195162206244_cover.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:53:48.188198Z"
+  },
+  {
+    "Id": "1d1daa34-42bf-47dd-84c4-02d877b1df3f",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Low (2017 Remaster)",
+    "Artist": "David Bowie",
+    "ReleaseDate": "1977-01-14T00:00:00",
+    "Genres": [
+      "Rock"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/49/2d/f7492da6-164e-b023-4b17-937329c35458/190295842895.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:54:17.9039052Z"
+  },
+  {
+    "Id": "7d345f88-73a8-410f-a3a4-9708e0b8fa64",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "Remain In Light",
+    "Artist": "Talking Heads",
+    "ReleaseDate": "1980-10-08T00:00:00",
+    "Genres": [
+      "Alternative"
+    ],
+    "Rating": null,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/87/5f/5b/mzi.zzquknhm.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:55:01.3027066Z"
+  },
+  {
+    "Id": "e129499e-26f1-42cd-86fe-ddc6be1a11e9",
+    "OwnerUserId": "4215268a-1221-4918-950e-e1fef530b0ae",
+    "Title": "In the Court of the Crimson King (Expanded Edition)",
+    "Artist": "King Crimson",
+    "ReleaseDate": "1969-10-10T00:00:00",
+    "Genres": [
+      "Prog-Rock/Art Rock"
+    ],
+    "Rating": 5,
+    "Status": 1,
+    "IsFavorite": true,
+    "CoverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/2f/c7/19/2fc71988-6871-be2c-6731-a3d0f2a6b232/Court_2500px.jpg/600x600bb.jpg",
+    "DateAdded": "2026-06-17T00:55:35.4198211Z"
   }
 ]
